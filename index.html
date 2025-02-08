@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- whole container -->
+    <div class="container mt-5 ">
+        <div class="row ">
+            <!-- form  -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                      <!-- form fields -->
+                       <div class="row">
+                        <!-- first name -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="inputFname" aria-describedby="emailHelp" >
+                              </div>
+                        </div>
+                        <!-- last name -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="inputLname" aria-describedby="emailHelp">
+                              </div>
+                        </div>
+                        <!-- email -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">email </label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                              </div>
+                        </div>
+                        <!-- phone number -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">phone number</label>
+                                <input type="number" class="form-control" id="inputPhoneno" aria-describedby="emailHelp">
+                              </div>
+                        </div>
+                        <!-- submit button -->
+                         <div class="col">
+                            <button type="submit" class="btn btn-outline-success" onclick="submitbtn()">submit</button>
+                            <button type="submit" class="btn btn-outline-warning" onclick="resetbtn()">reset</button>
+                         </div>
+                       </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- table -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">S.NO</th>
+                                <th scope="col">FIRST NAME</th>
+                                <th scope="col">LAST NAME</th>
+                                <th scope="col">EMAIL ID</th>
+                                <th scope="col">PHONE NO</th>
+                                <th scope="col">REMOVE</th>
+                              </tr>
+                            </thead>
+                            <tbody id="userDetails">
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
