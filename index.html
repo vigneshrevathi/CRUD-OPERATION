@@ -13,8 +13,14 @@
 </head>
 
 <body>
+  <!-- navigation bar  -->
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-text">
+      Enter your details here
+    </span>
+  </nav>
     <!-- whole container -->
-    <div class="container mt-5 ">
+    <div class="container mt-5" >
         <div class="row ">
             <!-- form  -->
             <div class="col-6">
@@ -26,28 +32,28 @@
                         <div class="col-6">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="inputFname" aria-describedby="emailHelp" >
+                                <input type="text" class="form-control" id="inputFname" aria-describedby="emailHelp" placeholder="enter your first name" >
                               </div>
                         </div>
                         <!-- last name -->
                         <div class="col-6">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="inputLname" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="inputLname" aria-describedby="emailHelp" placeholder="enter your second name">
                               </div>
                         </div>
                         <!-- email -->
                         <div class="col-6">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">email </label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="enter your email id">
                               </div>
                         </div>
                         <!-- phone number -->
                         <div class="col-6">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">phone number</label>
-                                <input type="number" class="form-control" id="inputPhoneno" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="inputPhoneno" aria-describedby="emailHelp" placeholder="enter your phone no">
                               </div>
                         </div>
                         <!-- submit button -->
@@ -72,6 +78,7 @@
                                 <th scope="col">EMAIL ID</th>
                                 <th scope="col">PHONE NO</th>
                                 <th scope="col">REMOVE</th>
+                                
                               </tr>
                             </thead>
                             <tbody id="userDetails">
